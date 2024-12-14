@@ -1,4 +1,5 @@
 import { Component, input } from '@angular/core';
+import { TestRepoItem } from '../../services/repos.service';
 
 @Component({
   selector: 'app-repo-list',
@@ -7,5 +8,5 @@ import { Component, input } from '@angular/core';
   styleUrl: './repo-list.component.css',
 })
 export class RepoListComponent {
-  repos = input([]);
+  repos = input<TestRepoItem[]>([]);
 }
